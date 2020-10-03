@@ -1,0 +1,209 @@
+<html>
+<head>
+<title>TestNG:  Dollar Days Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Dollar Days Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>26/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Sep 18 12:02:44 PDT 2020</td>
+</tr>
+<tr><td>Total time:</td><td>882 seconds (882746 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_Entry_Cases()'><b>TC_DD_PDP_Entry_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {TestCase=Verifying with Alpha characters, Password=cGFzc3dvcmQxMjM=, Runmode=Yes, SheetName=Entry, Qty=ABCDE, UserName=srikanthtesting100@gmail.com, TCID=TC1}</td>
+<td></td>
+<td>20</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_Entry_Cases()'><b>TC_DD_PDP_Entry_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {TestCase=Verifying with Special Characters, Password=cGFzc3dvcmQxMjM=, Runmode=Yes, SheetName=Entry, Qty=!@#$, UserName=srikanthtesting100@gmail.com, TCID=TC2}</td>
+<td></td>
+<td>20</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_LeftNavigation_Cases()'><b>TC_DD_PDP_LeftNavigation_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {TestCase=Verify Scrolling up, Password=cGFzc3dvcmQxMjM=, Runmode=Yes, SheetName=Left Navigation, Action Type=Scroll Up, UserName=srikanthtesting100@gmail.com, TCID=TC1}</td>
+<td></td>
+<td>16</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_LeftNavigation_Cases()'><b>TC_DD_PDP_LeftNavigation_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {TestCase=Verify Scrolling Down, Password=cGFzc3dvcmQxMjM=, Runmode=Yes, SheetName=Left Navigation, Action Type=Scroll Down, UserName=srikanthtesting100@gmail.com, TCID=TC2}</td>
+<td></td>
+<td>15</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_LeftNavigation_Cases()'><b>TC_DD_PDP_LeftNavigation_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {TestCase=Verify Zooming In, Password=cGFzc3dvcmQxMjM=, Runmode=Yes, SheetName=Left Navigation, Action Type=Zoom in, UserName=srikanthtesting100@gmail.com, TCID=TC3}</td>
+<td></td>
+<td>18</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_LeftNavigation_Cases()'><b>TC_DD_PDP_LeftNavigation_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {TestCase=Verify Zooming Out, Password=cGFzc3dvcmQxMjM=, Runmode=Yes, SheetName=Left Navigation, Action Type=Zoom out, UserName=srikanthtesting100@gmail.com, TCID=TC4}</td>
+<td></td>
+<td>24</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_LeftNavigation_Cases()'><b>TC_DD_PDP_LeftNavigation_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {TestCase=Verify Next Image, Password=cGFzc3dvcmQxMjM=, Runmode=Yes, SheetName=Left Navigation, Action Type=Next Image, UserName=srikanthtesting100@gmail.com, TCID=TC5}</td>
+<td></td>
+<td>18</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_LeftNavigation_Cases()'><b>TC_DD_PDP_LeftNavigation_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {TestCase=Verify Previous Image, Password=cGFzc3dvcmQxMjM=, Runmode=Yes, SheetName=Left Navigation, Action Type=Previous Image, UserName=srikanthtesting100@gmail.com, TCID=TC6}</td>
+<td></td>
+<td>19</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_LeftNavigation_Cases()'><b>TC_DD_PDP_LeftNavigation_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {TestCase=Verify 360 degrees, Password=cGFzc3dvcmQxMjM=, Runmode=Yes, SheetName=Left Navigation, Action Type=360 degrees, UserName=srikanthtesting100@gmail.com, TCID=TC7}</td>
+<td></td>
+<td>18</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_ProductDetails_Cases()'><b>TC_DD_PDP_ProductDetails_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {TestCase=Verify Image is displayed., Password=cGFzc3dvcmQxMjM=, Runmode=Yes, SheetName=Product Details, Verify Value=Image, UserName=srikanthtesting100@gmail.com, TCID=TC1}</td>
+<td></td>
+<td>16</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_ProductDetails_Cases()'><b>TC_DD_PDP_ProductDetails_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {TestCase=Verify Price is displayed., Password=cGFzc3dvcmQxMjM=, Runmode=Yes, SheetName=Product Details, Verify Value=Price, UserName=srikanthtesting100@gmail.com, TCID=TC2}</td>
+<td></td>
+<td>16</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_ProductDetails_Cases()'><b>TC_DD_PDP_ProductDetails_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {TestCase=Verify Product specifications are displayed., Password=cGFzc3dvcmQxMjM=, Runmode=Yes, SheetName=Product Details, Verify Value=Product Specifications, UserName=srikanthtesting100@gmail.com, TCID=TC3}</td>
+<td></td>
+<td>16</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_ProductDetails_Cases()'><b>TC_DD_PDP_ProductDetails_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {TestCase=Verify Product seller ratings are displayed., Password=cGFzc3dvcmQxMjM=, Runmode=Yes, SheetName=Product Details, Verify Value=Ratings, UserName=srikanthtesting100@gmail.com, TCID=TC4}</td>
+<td></td>
+<td>16</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_ProductDetails_Cases()'><b>TC_DD_PDP_ProductDetails_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {TestCase=Verify all variations of product are displayed., Password=cGFzc3dvcmQxMjM=, Runmode=Yes, SheetName=Product Details, Verify Value=Variations, UserName=srikanthtesting100@gmail.com, TCID=TC5}</td>
+<td></td>
+<td>15</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_ProductDetails_Cases()'><b>TC_DD_PDP_ProductDetails_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {TestCase=Verify Add to Cart is displayed., Password=cGFzc3dvcmQxMjM=, Runmode=Yes, SheetName=Product Details, Verify Value=Add to Cart, UserName=srikanthtesting100@gmail.com, TCID=TC6}</td>
+<td></td>
+<td>15</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_ProductDetails_Cases()'><b>TC_DD_PDP_ProductDetails_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {TestCase=Verify Product description is displayed., Password=cGFzc3dvcmQxMjM=, Runmode=Yes, SheetName=Product Details, Verify Value=Product Description, UserName=srikanthtesting100@gmail.com, TCID=TC7}</td>
+<td></td>
+<td>16</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_ProductDetails_Cases()'><b>TC_DD_PDP_ProductDetails_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {TestCase=Verify "Have a question?" Field is displayed., Password=cGFzc3dvcmQxMjM=, Runmode=Yes, SheetName=Product Details, Verify Value=Have a question, UserName=srikanthtesting100@gmail.com, TCID=TC8}</td>
+<td></td>
+<td>16</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_ProductDetails_Cases()'><b>TC_DD_PDP_ProductDetails_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {TestCase=Verify Write review button is displayed., Password=cGFzc3dvcmQxMjM=, Runmode=Yes, SheetName=Product Details, Verify Value=Write Review, UserName=srikanthtesting100@gmail.com, TCID=TC9}</td>
+<td></td>
+<td>16</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_Quantity_Cases()'><b>TC_DD_PDP_Quantity_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {Close Popup?=CloseBtn, TestCase=Zero Qty,  Unlimited checkbox unchecked, Close popup by pressing Close button, TCID=TC1, SheetName=Popup, Runmode=Yes, UserName=srikanthtesting100@gmail.com, Password=cGFzc3dvcmQxMjM=, Unlimited Check?=No, Qty=0.0}</td>
+<td></td>
+<td>25</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_Quantity_Cases()'><b>TC_DD_PDP_Quantity_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {Close Popup?=Invalid, TestCase=Valid Qty,  Unlimited checkbox unchecked, TCID=TC2, SheetName=Popup, Runmode=Yes, UserName=srikanthtesting100@gmail.com, Password=cGFzc3dvcmQxMjM=, Unlimited Check?=No, Qty=10.0}</td>
+<td></td>
+<td>33</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_Quantity_Cases()'><b>TC_DD_PDP_Quantity_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {Close Popup?=CloseBtn, TestCase=Invalid Qty,  Unlimited checkbox unchecked, Close popup by pressing Close button, TCID=TC3, SheetName=Popup, Runmode=Yes, UserName=srikanthtesting100@gmail.com, Password=cGFzc3dvcmQxMjM=, Unlimited Check?=No, Qty=100000.0}</td>
+<td></td>
+<td>25</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_Quantity_Cases()'><b>TC_DD_PDP_Quantity_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {Close Popup?=Invalid, TestCase=Zero Qty,  Unlimited checkbox checked, TCID=TC4, SheetName=Popup, Runmode=Yes, UserName=srikanthtesting100@gmail.com, Password=cGFzc3dvcmQxMjM=, Unlimited Check?=Yes, Qty=0.0}</td>
+<td></td>
+<td>23</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_Quantity_Cases()'><b>TC_DD_PDP_Quantity_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {Close Popup?=Invalid, TestCase=Valid Qty,  Unlimited checkbox checked, TCID=TC5, SheetName=Popup, Runmode=Yes, UserName=srikanthtesting100@gmail.com, Password=cGFzc3dvcmQxMjM=, Unlimited Check?=Yes, Qty=10.0}</td>
+<td></td>
+<td>23</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_Quantity_Cases()'><b>TC_DD_PDP_Quantity_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {Close Popup?=Invalid, TestCase=Invalid Qty,  Unlimited checkbox checked, TCID=TC6, SheetName=Popup, Runmode=Yes, UserName=srikanthtesting100@gmail.com, Password=cGFzc3dvcmQxMjM=, Unlimited Check?=Yes, Qty=100000.0}</td>
+<td></td>
+<td>22</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_Quantity_Cases()'><b>TC_DD_PDP_Quantity_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {Close Popup?=Outside, TestCase=Zero Qty,  Unlimited checkbox unchecked, Close popup by pressing outside the popup, TCID=TC7, SheetName=Popup, Runmode=Yes, UserName=srikanthtesting100@gmail.com, Password=cGFzc3dvcmQxMjM=, Unlimited Check?=No, Qty=0.0}</td>
+<td></td>
+<td>26</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+<tr>
+<td title='com.dollardays.testcases.Team9_ProductDescriptionPageTestCases.TC_DD_PDP_Quantity_Cases()'><b>TC_DD_PDP_Quantity_Cases</b><br>Test class: com.dollardays.testcases.Team9_ProductDescriptionPageTestCases<br>Parameters: {Close Popup?=Outside, TestCase=Invalid Qty,  Unlimited checkbox unchecked, Close popup by pressing outside the popup, TCID=TC8, SheetName=Popup, Runmode=Yes, UserName=srikanthtesting100@gmail.com, Password=cGFzc3dvcmQxMjM=, Unlimited Check?=No, Qty=100000.0}</td>
+<td></td>
+<td>24</td>
+<td>com.dollardays.testcases.Team9_ProductDescriptionPageTestCases@3444d69d</td></tr>
+</table><p>
+</body>
+</html>
