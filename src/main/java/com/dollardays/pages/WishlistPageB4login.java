@@ -103,14 +103,16 @@ public class WishlistPageB4login extends BaseTest {
 		Wishlistimg.click();
 		return WishlistDropdown;
 	}
+	@FindBy(xpath="/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/h3[1]/span[1]/a[1]")
+	WebElement Returntowishlist;
 	
 	@FindBy(linkText="Wishlist Cart")
 	WebElement Wishlistcartbtn;
 	
-	public String VerifyWishlistcartbtn() {
+	public boolean VerifyWishlistcartbtn() {
 		Wishlistimg.click();
 		Wishlistcartbtn.click();
-		return driver.getTitle();
+		return Returntowishlist.isDisplayed();
 	}
 	
 	@FindBy(linkText="Learn More")

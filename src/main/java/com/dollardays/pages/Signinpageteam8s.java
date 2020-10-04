@@ -7,19 +7,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 import com.dollardays.commons.Base64;
+import com.dollardays.testcases.BaseTest;
 
-public class LoginPage {
-
+public class Signinpageteam8s extends BaseTest{
 	WebDriver driver;
-
-	public LoginPage(WebDriver driver) {
+	
+	public Signinpageteam8s(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-
+	
+	//Page Factory - or;
 	@FindBy(xpath = "//a[normalize-space(.)='Sign in']")
 	private WebElement signIn;
 
@@ -55,8 +55,7 @@ public class LoginPage {
 		return loginBtn;
 	}
 	
-	//@FindBy(xpath = "//*[@id='header-main']/div/div/div[3]/div/ul/li[1]/a")
-	@FindBy(xpath="//*[@id=\"aspnetForm\"]/header/div/div/div/div[3]/div/ul/li[1]/a/span")
+	@FindBy(xpath = "//*[@id='header-main']/div/div/div[3]/div/ul/li[1]/a")
 	private WebElement userDrodown;
 
 	public WebElement getUserDrodown() {
@@ -77,22 +76,16 @@ public class LoginPage {
 		getDropdownsignIn().click();
 		getUsername().sendKeys(username);
 		getPassword().sendKeys(password);
-		Thread.sleep(500);
-		getPassword().submit();
-		//getLoginBtn().click();
-		String expectedTitle = "DollarDays | Bulk Goods for Nonprofits, Businesses & Schools | Wholesale Products";
-		String actualTitle = driver.getTitle();
-		Assert.assertEquals(actualTitle, expectedTitle, " Successfully Logged into the HomePage");
+		getLoginBtn().click();
 	}
 	
 	public void invokeLogin() throws UnsupportedEncodingException, InterruptedException, GeneralSecurityException {
 		Thread.sleep(1000);
 		getSignIn().click();
 		getDropdownsignIn().click();
-		getUsername().sendKeys("srikanthtesting100@gmail.com");
-		getPassword().sendKeys(Base64.decrypt("cGFzc3dvcmQxMjM="));
-		getPassword().submit();
-		//getLoginBtn().click();
+		getUsername().sendKeys("shilpasupradeep@mgail.com");
+		getPassword().sendKeys(Base64.decrypt("RG9sbGFyZGF5czEyMw=="));
+		getLoginBtn().click();
+	
 	}
-
 }
