@@ -7,18 +7,40 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.dollardays.testcases.BaseTest;
 
-
-public class HomePageRepositoryTeam8 extends BaseTest {
-
+public class Team8Homepage extends BaseTest{
+	// page Factory (or) Object Repository
 	WebDriver driver;
 
-	public HomePageRepositoryTeam8(WebDriver driver) {
+	public Team8Homepage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+	@FindBy(xpath="//*[@id=\"aspnetForm\"]/header/div/div/div/div[3]/div/ul/li[2]/a/img")
+	WebElement Wishlistimg;
+	
+	public WebElement Wishlistimg() {
+		return Wishlistimg;
+	}
+	
+	public boolean verifyWishlistimg() throws InterruptedException {
+		Thread.sleep(5000);
+		Wishlistimg.click();
+		Thread.sleep(5000);
+		return DropDownmenu.isDisplayed();
+				
+	}
+	
+	@FindBy(xpath="//ul[@class='dropdown-menu']")
+	WebElement DropDownmenu;
+	
 
-	// page factory/object repository
-
+	@FindBy(linkText="Learn More")
+	WebElement WLLearnMore;
+	
+	public WebElement WLLearnMore() {
+		return WLLearnMore;
+	}
+	
 	@FindBy(xpath = "//div[@class='mid-school-banner']//div[@class='row']//div[1]//a[1]")
 	WebElement bigBoxSchoolSupplies;
 
@@ -166,4 +188,63 @@ public class HomePageRepositoryTeam8 extends BaseTest {
 	public WebElement getKitchenDining() {
 		return kitchenDining;
 	}
+	
+	public String validateWLLearnMoreTitle() throws InterruptedException {
+		Wishlistimg.click();
+		Thread.sleep(5000);
+		WLLearnMore.click();
+		Thread.sleep(5000);
+		return driver.getTitle();
+	}
+	@FindBy(linkText="Create a Wishlist")
+	WebElement CreateaWishlist;
+	
+	public String validateCreateaWishlistTitle() throws InterruptedException {
+		Wishlistimg.click();
+		Thread.sleep(5000);
+		CreateaWishlist.click();
+		Thread.sleep(5000);
+		return driver.getTitle();
+		
+	}
+	@FindBy(linkText="Donate Today")
+	WebElement WLDonatetoday;
+	
+	public String validateWLDonatetodayTitle() throws InterruptedException {
+		Wishlistimg.click();
+		Thread.sleep(5000);
+		WLDonatetoday.click();
+		Thread.sleep(5000);
+		return driver.getTitle();
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

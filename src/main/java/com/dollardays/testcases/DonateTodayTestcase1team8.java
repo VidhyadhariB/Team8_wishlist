@@ -12,7 +12,7 @@ import com.dollardays.commons.Base64;
 import com.dollardays.listners.ExtentTestManager;
 import com.dollardays.pages.LoginPage;
 import com.dollardays.pages.SearchPage;
-import com.dollardays.pages.donateTodayPageteam8;
+import com.dollardays.pages.Team8WishlistPage;
 import com.dollardays.utilities.DDDataProvider;
 import com.dollardays.utilities.TestUtil;
 
@@ -31,7 +31,7 @@ public class DonateTodayTestcase1team8 extends BaseTest{
 		loginPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));
 		Thread.sleep(2000);		
 		ExtentTestManager.getTest().log(Status.PASS, "Step 2  : Clicked on Wishlist drop down");
-        donateTodayPageteam8 topMenuBar = new donateTodayPageteam8(driver);	
+		Team8WishlistPage topMenuBar = new Team8WishlistPage(driver);	
         topMenuBar.getWishList().click();
         Thread.sleep(1000);
         

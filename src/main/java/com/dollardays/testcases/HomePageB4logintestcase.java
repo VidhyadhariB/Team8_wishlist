@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 import com.dollardays.listners.ExtentTestManager;
-import com.dollardays.pages.HomePageB4login;
+import com.dollardays.pages.Team8Homepage;
 import com.dollardays.utilities.DDDataProvider;
 import com.dollardays.utilities.TestUtil;
 
@@ -13,13 +13,13 @@ import com.dollardays.utilities.TestUtil;
 
 public class HomePageB4logintestcase extends BaseTest{
 	
-	HomePageB4login Home;
+	Team8Homepage Home;
 	
 	@Test(priority=1)
 	public void WishlistimgTest() throws InterruptedException {
 		ExtentTestManager.getTest().log(Status.INFO, "WishlistimgClickTestcase");
 		Thread.sleep(1000);
-		Home= new HomePageB4login(driver);//Create an obj reference for HomepageB4login as Home
+		Home= new Team8Homepage(driver);//Create an obj reference for HomepageB4login as Home
 		 boolean flag=Home.verifyWishlistimg();// call predefined method from Homepage B4login element method
 		Assert.assertTrue(flag);// test case comparison line
 		ExtentTestManager.getTest().log(Status.PASS, "Wishlist Drp-Dwn Menu successfully displayed");
@@ -29,7 +29,7 @@ public class HomePageB4logintestcase extends BaseTest{
 	public void WLLearnMorePageTitleTest() throws InterruptedException {
 		ExtentTestManager.getTest().log(Status.INFO, "LearnMoreSubmenuClickTestcase");
 		Thread.sleep(1000);
-		Home= new HomePageB4login(driver);
+		Home= new Team8Homepage(driver);
 		String title=Home.validateWLLearnMoreTitle();
 		Assert.assertEquals(title,"Wishlist");	
 		ExtentTestManager.getTest().log(Status.PASS, "Navigated to Wishlist Page");
@@ -38,7 +38,7 @@ public class HomePageB4logintestcase extends BaseTest{
 	public void CreateawishlistPageTitleTest() throws InterruptedException {
 		ExtentTestManager.getTest().log(Status.INFO, "CreateaWishlistSubmenuClickTestcase");
 		Thread.sleep(1000);
-		Home= new HomePageB4login(driver);
+		Home= new Team8Homepage(driver);
 		String title=Home.validateCreateaWishlistTitle();
 		Assert.assertEquals(title,"Login or Register - DollarDays");
 		ExtentTestManager.getTest().log(Status.PASS, "Navigated to Sitelogin Page");
@@ -47,7 +47,7 @@ public class HomePageB4logintestcase extends BaseTest{
 	public void DonatetodayPageTitleTest() throws InterruptedException {
 		ExtentTestManager.getTest().log(Status.INFO, "DonateTodaySubmenuClickTestcase");
 		Thread.sleep(1000);
-		Home= new HomePageB4login(driver);
+		Home= new Team8Homepage(driver);
 		String title=Home.validateWLDonatetodayTitle();
 		Assert.assertEquals(title,"Wishlist");
 		ExtentTestManager.getTest().log(Status.PASS, "Navigated to Wishlist Page");

@@ -12,8 +12,8 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 import com.dollardays.commons.Base64;
 import com.dollardays.listners.ExtentTestManager;
-import com.dollardays.pages.HomePageRepositoryTeam8;
 import com.dollardays.pages.LoginPage;
+import com.dollardays.pages.Team8Homepage;
 import com.dollardays.utilities.DDDataProvider;
 import com.dollardays.utilities.JsonReader;
 
@@ -30,7 +30,7 @@ public class HomePageTestcaseTeam8 extends BaseTest {
 		LoginPage login = new LoginPage(driver);
 		login.login(datatable.get("usernme"), Base64.decrypt(datatable.get("password")));
 
-		HomePageRepositoryTeam8 page = new HomePageRepositoryTeam8(driver);
+		Team8Homepage page = new Team8Homepage(driver);
 		page.getBigBoxSchoolSupplies().click();
 
 		String title = driver.getTitle();
@@ -44,26 +44,26 @@ public class HomePageTestcaseTeam8 extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "ForwardBackpacks testcase");
 		Thread.sleep(1000);
 
-		HomePageRepositoryTeam8 homePage = new HomePageRepositoryTeam8(driver);
-		homePage.getForwardBackpacks().click();
+		Team8Homepage page = new Team8Homepage(driver);
+		page.getForwardBackpacks().click();
 
 		String title = driver.getTitle();
 		System.out.println("title - " + title);
 	}
 
-	@Test
+	/*@Test
 	public void testBigBoxFlipFlops()
 			throws InterruptedException, UnsupportedEncodingException, GeneralSecurityException {
 
 		ExtentTestManager.getTest().log(Status.INFO, "BigBoxFlipFlops testcase");
 		Thread.sleep(1000);
 
-		HomePageRepositoryTeam8 homePage = new HomePageRepositoryTeam8(driver);
-		homePage.getBigBoxFlipFlops().click();
+		Team8Homepage page = new Team8Homepage(driver);
+		page.getBigBoxFlipFlops().click();
 
 		String title = driver.getTitle();
 		System.out.println("title - " + title);
-	}
+	}*/
 
 	@Test
 	public void testPPEGear() throws InterruptedException {
@@ -71,8 +71,8 @@ public class HomePageTestcaseTeam8 extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "PPEGear testcase");
 		Thread.sleep(1000);
 
-		HomePageRepositoryTeam8 homePage = new HomePageRepositoryTeam8(driver);
-		homePage.getPPEGear().click();
+		Team8Homepage page = new Team8Homepage(driver);
+		page.getPPEGear().click();
 
 		String title = driver.getTitle();
 		System.out.println("title - " + title);
@@ -85,8 +85,8 @@ public class HomePageTestcaseTeam8 extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "TravelSize testcase");
 		Thread.sleep(1000);
 
-		HomePageRepositoryTeam8 homePage = new HomePageRepositoryTeam8(driver);
-		homePage.getTravelSize().click();
+		Team8Homepage page = new Team8Homepage(driver);
+		page.getTravelSize().click();
 
 		String title = driver.getTitle();
 		System.out.println("title - " + title);
@@ -98,8 +98,8 @@ public class HomePageTestcaseTeam8 extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Backpack testcase");
 		Thread.sleep(1000);
 
-		HomePageRepositoryTeam8 homePage = new HomePageRepositoryTeam8(driver);
-		homePage.getBackpacks().click();
+		Team8Homepage page = new Team8Homepage(driver);
+		page.getBackpacks().click();
 
 		String title = driver.getTitle();
 		System.out.println("title - " + title);
@@ -112,8 +112,8 @@ public class HomePageTestcaseTeam8 extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "SchoolSupplies testcase");
 		Thread.sleep(1000);
 		
-		HomePageRepositoryTeam8 homePage = new HomePageRepositoryTeam8(driver);
-		homePage.getSchoolSupplies().click();
+		Team8Homepage page = new Team8Homepage(driver);
+		page.getSchoolSupplies().click();
 
 		String title = driver.getTitle();
 		System.out.println("title - " + title);
@@ -126,8 +126,8 @@ public class HomePageTestcaseTeam8 extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Blankets testcase");
 		Thread.sleep(1000);
 		
-		HomePageRepositoryTeam8 homePage = new HomePageRepositoryTeam8(driver);
-		homePage.getBlankets().click();
+		Team8Homepage page = new Team8Homepage(driver);
+		page.getBlankets().click();
 
 		String title = driver.getTitle();
 		System.out.println("title - " + title);
@@ -140,8 +140,8 @@ public class HomePageTestcaseTeam8 extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Baby Link testcase");
 		Thread.sleep(1000);
 		
-		HomePageRepositoryTeam8 homePage = new HomePageRepositoryTeam8(driver);
-		homePage.getBabyLink().click();
+		Team8Homepage page = new Team8Homepage(driver);
+		page.getBabyLink().click();
 
 		String title = driver.getTitle();
 		System.out.println("title - " + title);
@@ -154,8 +154,8 @@ public class HomePageTestcaseTeam8 extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Food testcase");
 		Thread.sleep(1000);
 		
-		HomePageRepositoryTeam8 homePage = new HomePageRepositoryTeam8(driver);
-		homePage.getFood().click();
+		Team8Homepage page = new Team8Homepage(driver);
+		page.getFood().click();
 
 		String title = driver.getTitle();
 		System.out.println("title - " + title);
@@ -168,8 +168,8 @@ public class HomePageTestcaseTeam8 extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Electronics testcase");
 		Thread.sleep(1000);
 		
-		HomePageRepositoryTeam8 homePage = new HomePageRepositoryTeam8(driver);
-		homePage.getElectronics().click();
+		Team8Homepage page = new Team8Homepage(driver);
+		page.getElectronics().click();
 
 		String title = driver.getTitle();
 		System.out.println("title - " + title);
@@ -182,8 +182,8 @@ public class HomePageTestcaseTeam8 extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Toysgames testcase");
 		Thread.sleep(1000);
 
-		HomePageRepositoryTeam8 homePage = new HomePageRepositoryTeam8(driver);
-		homePage.getToysGames().click();
+		Team8Homepage page = new Team8Homepage(driver);
+		page.getToysGames().click();
 
 		String title = driver.getTitle();
 		System.out.println("title - " + title);
@@ -196,8 +196,8 @@ public class HomePageTestcaseTeam8 extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "FlipFlops testcase");
 		Thread.sleep(1000);
 
-		HomePageRepositoryTeam8 homePage = new HomePageRepositoryTeam8(driver);
-		homePage.getFlipFlops().click();
+		Team8Homepage page = new Team8Homepage(driver);
+		page.getFlipFlops().click();
 
 		String title = driver.getTitle();
 		System.out.println("title - " + title);
@@ -211,8 +211,8 @@ public class HomePageTestcaseTeam8 extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "kidsclothing testcase");
 		Thread.sleep(1000);
 
-		HomePageRepositoryTeam8 homePage = new HomePageRepositoryTeam8(driver);
-		homePage.getKidsClothing().click();
+		Team8Homepage page = new Team8Homepage(driver);
+		page.getKidsClothing().click();
 
 		String title = driver.getTitle();
 		System.out.println("title - " + title);
@@ -225,8 +225,8 @@ public class HomePageTestcaseTeam8 extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "shoes testcase");
 		Thread.sleep(1000);
 
-		HomePageRepositoryTeam8 homePage = new HomePageRepositoryTeam8(driver);
-		homePage.getShoes().click();
+		Team8Homepage page = new Team8Homepage(driver);
+		page.getShoes().click();
 
 		String title = driver.getTitle();
 		System.out.println("title - " + title);
@@ -239,8 +239,8 @@ public class HomePageTestcaseTeam8 extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Medicine testcase");
 		Thread.sleep(1000);
 
-		HomePageRepositoryTeam8 homePage = new HomePageRepositoryTeam8(driver);
-		homePage.getMedicine().click();
+		Team8Homepage page = new Team8Homepage(driver);
+		page.getMedicine().click();
 
 		String title = driver.getTitle();
 		System.out.println("title - " + title);
@@ -253,8 +253,8 @@ public class HomePageTestcaseTeam8 extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "first aid testcase");
 		Thread.sleep(1000);
 
-		HomePageRepositoryTeam8 homePage = new HomePageRepositoryTeam8(driver);
-		homePage.getFirstAid().click();
+		Team8Homepage page = new Team8Homepage(driver);
+		page.getFirstAid().click();
 
 		String title = driver.getTitle();
 		System.out.println("title - " + title);
@@ -267,8 +267,8 @@ public class HomePageTestcaseTeam8 extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "oralcare testcase");
 		Thread.sleep(1000);
 
-		HomePageRepositoryTeam8 homePage = new HomePageRepositoryTeam8(driver);
-		homePage.getOralCare().click();
+		Team8Homepage page = new Team8Homepage(driver);
+		page.getOralCare().click();
 
 		String title = driver.getTitle();
 		System.out.println("title - " + title);
@@ -281,8 +281,8 @@ public class HomePageTestcaseTeam8 extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "HygieneKits testcase");
 		Thread.sleep(1000);
 
-		HomePageRepositoryTeam8 homePage = new HomePageRepositoryTeam8(driver);
-		homePage.getHygieneKits().click();
+		Team8Homepage page = new Team8Homepage(driver);
+		page.getHygieneKits().click();
 
 		String title = driver.getTitle();
 		System.out.println("title - " + title);
@@ -295,8 +295,8 @@ public class HomePageTestcaseTeam8 extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "CleaningSupplies testcase");
 		Thread.sleep(1000);
 
-		HomePageRepositoryTeam8 homePage = new HomePageRepositoryTeam8(driver);
-		homePage.getCleaningSupplies().click();
+		Team8Homepage page = new Team8Homepage(driver);
+		page.getCleaningSupplies().click();
 
 		String title = driver.getTitle();
 		System.out.println("title - " + title);
@@ -309,8 +309,8 @@ public class HomePageTestcaseTeam8 extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "KitchenDining testcase");
 		Thread.sleep(1000);
 
-		HomePageRepositoryTeam8 homePage = new HomePageRepositoryTeam8(driver);
-		homePage.getKitchenDining().click();
+		Team8Homepage page = new Team8Homepage(driver);
+		page.getKitchenDining().click();
 
 		String title = driver.getTitle();
 		System.out.println("title - " + title);
