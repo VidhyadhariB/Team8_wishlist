@@ -6,11 +6,25 @@
   </listeners>
   <test thread-count="5" name="Dollar Days Test(failed)">
     <classes>
+      <class name="com.dollardays.testcases.HomePageTestcaseTeam8">
+        <methods>
+          <include name="testKitchenDining"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="quit"/>
+          <include name="setUpBrowser"/>
+        </methods>
+      </class> <!-- com.dollardays.testcases.HomePageTestcaseTeam8 -->
       <class name="com.dollardays.testcases.WishlistPageB4loginTestcase">
         <methods>
-          <include name="VerifyWishlistcartbuttontestcase"/>
-          <include name="VerifyViewallprojectsbutton"/>
+          <include name="InspectPolkcountrymidschooladDonatenowbtn"/>
+          <include name="afterClass"/>
+          <include name="InspectAnnArborPublicSchoolsadDonatenowbtn"/>
+          <include name="VerifyCityStateandorzipcodefieldfunctionalityvaliddata"/>
+          <include name="beforeClass"/>
           <include name="quit"/>
+          <include name="VerifyCityStateandorzipcodefieldfunctionalityInvaliddata" invocation-numbers="0 1 2"/>
+          <include name="VerifysearchbyorganizationtextfieldfunctionalityInvaliddata" invocation-numbers="0 1 2 3 4"/>
           <include name="setUpBrowser"/>
         </methods>
       </class> <!-- com.dollardays.testcases.WishlistPageB4loginTestcase -->
