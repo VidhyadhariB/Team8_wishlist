@@ -9,22 +9,34 @@
       <class name="com.dollardays.testcases.HomePageTestcaseTeam8">
         <methods>
           <include name="testKitchenDining"/>
+          <include name="testCleaningSupplies"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="quit"/>
+          <include name="testKidsClothing"/>
+          <include name="testFirstAid"/>
+          <include name="testSchoolSupplies"/>
           <include name="setUpBrowser"/>
+          <include name="testFood"/>
+          <include name="testToysGames"/>
+          <include name="tetsTravelSize"/>
+          <include name="testBlankets"/>
+          <include name="testShoes"/>
+          <include name="testMedicine"/>
+          <include name="testFlipFlops"/>
+          <include name="testOralCare"/>
+          <include name="testPPEGear"/>
+          <include name="testForwardBackpacks"/>
+          <include name="testHygieneKits"/>
+          <include name="quit"/>
+          <include name="testElectronics"/>
         </methods>
       </class> <!-- com.dollardays.testcases.HomePageTestcaseTeam8 -->
       <class name="com.dollardays.testcases.WishlistPageB4loginTestcase">
         <methods>
           <include name="InspectPolkcountrymidschooladDonatenowbtn"/>
           <include name="afterClass"/>
-          <include name="InspectAnnArborPublicSchoolsadDonatenowbtn"/>
-          <include name="VerifyCityStateandorzipcodefieldfunctionalityvaliddata"/>
           <include name="beforeClass"/>
           <include name="quit"/>
-          <include name="VerifyCityStateandorzipcodefieldfunctionalityInvaliddata" invocation-numbers="0 1 2"/>
-          <include name="VerifysearchbyorganizationtextfieldfunctionalityInvaliddata" invocation-numbers="0 1 2 3 4"/>
           <include name="setUpBrowser"/>
         </methods>
       </class> <!-- com.dollardays.testcases.WishlistPageB4loginTestcase -->
